@@ -1,9 +1,9 @@
-# import hashlib
+import hashlib
 
-# data = "Welcom to BlockChain Data!"
-# hash_value = hashlib.sha256(data.encode()).hexdigest()
-# print(hash_value)
-# print("sha256 algo: ", len(hash_value))
+data = input("Enter the value: ")
+hash_value = hashlib.sha256(data.encode()).hexdigest()
+print(hash_value)
+print("sha256 algo: ", len(hash_value))
 
 # hash_value_md5 = hashlib.md5(data.encode()).hexdigest()
 # print(hash_value_md5)
@@ -52,15 +52,15 @@
 '''
 Question: Take 5 inputs from user and find out hash value of each with its length(use sha512)
 '''
-import hashlib
-user_input = []
+# import hashlib
+# user_input = []
 
-for i in range(5):
-    item = input(f"Enter data {i + 1}: ")
-    user_input.append(item)
+# for i in range(5):
+#     item = input(f"Enter data {i + 1}: ")
+#     user_input.append(item)
 
-print("\nUsing sha512 algo")
-for data in user_input:
-    hash_value_sha512 = hashlib.sha512(data.encode()).hexdigest()
-    print(hash_value_sha512)
-    print("sha512 algo: ", len(hash_value_sha512))
+# print("\nUsing sha512 algo")
+# for data in user_input:
+#     hash_value_sha512 = hashlib.sha512(data.encode()).hexdigest()
+#     print(hash_value_sha512)
+#     print("sha512 algo: ", len(hash_value_sha512))
